@@ -1,0 +1,126 @@
+#navi{
+  padding-right:10px;
+}
+.navbar-brand{
+  height: 50px;
+}
+.navbar{
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+#hello{
+  padding-left: 50% !important;
+  align-content: center !important;
+}
+
+#welcometext{
+  font-size:5em;
+  margin-top:0;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  text-align:center;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+#destinations{
+  font-size:2em;
+  margin-top:0;
+ /* // padding-top: 50%;
+  padding-bottom: 50%; */
+  text-align:center;
+  position:absolute;
+  top:70%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background-color: aqua;
+}
+
+
+#flight-container{
+  text-align:center;
+  position:relative;
+  transform:translateY(20%);
+}
+
+
+ #welcome-page{
+  /* webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+ /* // background-repeat: no-repeat; */
+ 
+   width: 100%;
+  height: 100%;
+}
+#flight-page{
+  
+  padding-top: 50%;  
+  
+} 
+#food-page{
+  padding-top: 25%; 
+  padding-bottom: 15%;  
+}
+
+#manage-page{
+  padding-top: 35%; 
+  padding-bottom: 10%;  
+}
+#booked-header{
+  padding-top: 35%; 
+  
+}
+#person-header{
+  padding-top: 35%; 
+  
+}
+#payment-header{
+  padding-top: 35%; 
+  
+}
+#booked-id{
+  padding-bottom: 35%; 
+  
+}
+
+.text-center-info{
+  padding-top: 4%;
+  
+}
+
+#seat-selection{
+  
+  padding-top: 5%; 
+  
+}
+
+#seats-btn{
+  background-color: aqua;
+}
+
+
+
+
+
+
+
+
+

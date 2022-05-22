@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Home</title>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR HERE -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <img src="images/Flight Dream Air2.png" class="navbar-brand" />
+        <!-- <a href="index.html" class="navbar-brand">The boys flight logo</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nbar">
+          <ul class = "navbar-nav ms-auto" id="navi">
+            <li class="nav-item">
+              <a href="#flightHeader" class="nav-link"> Flights </a>
+            </li>
+            <li class="nav-item">
+              <a href="Food.html" class="nav-link"> Food </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Manage Flights </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Sign Up </a>
+            </li>
+            <li class="nav-item">
+              <form class="form-inline">
+                <button class="btn btn-info" type="button">Sign In</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <!-- Body here -->
+    <!-- welcome page -->
+   <section id="welcome-page" >
+      <h1 class="display-1" id="welcometext" >Welcome To The Boys Flight Center</h1>
+      <!-- onclick="document.getElementById('food-page').scrollIntoView();" -->
+<button id="destinations" ><a href="#flightHeader"> Go to destinations</a></button>
+   </section>
+
+   <!-- flight page -->   
+   <section id ="flight-page">
+  
+   <h1 id="flightHeader" class="display-1 text-center">Choose Your Destination</h1>   
+<section id ="flight-page2"></section>
+   <div class="text-center" id="flight-container">
+     <img id="banner-message" src="images/peru.png" id="img-fluid" class="img-fluid" alt="Responsive image" onclick="imageClickPeru()">
+     <img src="images/Uk.png" class="img-fluid" alt="Responsive image" onclick="imageClick()">
+     <img src="images/japan.png" class="img-fluid" alt="Responsive image" onclick="imageClickP()">
+   </div>
+   
+
+  </section>
+
+    <!-- food page -->
+    <section id ="food-page">      <h1 id ="food-page-header" class="display-1 text-center">Pay Now Save Later</h1>
+    
+      <div class="text-center" id="flight-container">
+        <img src="images/fiji.png" class="img-fluid" alt="Responsive image" >
+        
+        <img src="images/meal.png" class="img-fluid" alt="Responsive image">
+        <img src="images/snacks.png" class="img-fluid" alt="Responsive image">
+         </div>
+<div class="text-center-info" id="flight-container">
+<input type="checkbox" id="water">
+          <label for="water"> Water     </label>
+          <input type="checkbox" id="food">
+          <label for="food"> food     </label>
+          <input type="checkbox" id="snacks">
+          <label for="snacks"> snacks     </label>
+ <br><br><br><br> <button onclick="addFood()"> Add selected items to order</button>
+
+
+          
+      </div>
+      </section>  
+ 
+
+
+
+      
+      <div class="text-center-seats" id="flight-container">
+         <h1 id="seat-selection-header">Seat selection</h1>
+
+      <section id="seat-selection">
+        <label for="seats">Choose a seat:</label>
+        <select name="seats" id="seats" onchange="seatSelection()">
+          <option value="1A">1A</option>
+          <option value="1B">1B</option>
+          <option value="1C">1C</option>
+          <option value="1D">1D</option>
+        </select>
+      </section>
+      <br>
+      <button id="seats-btn" ><a href="#manage-header"> Manage Booking</a></button>
+    </div>
+     
+  
+       
+  
+
+       <!-- manage page -->
+       <section id ="manage-page">
+        <h1 id ="manage-header" class="display-1 text-center">Flight information</h1>
+        
+        <div class="text-center-info" id="flight-container">
+         <p>Destination Booked: <a id="flight-booked"></a></p> 
+         <p>Items chosen: <a id="items-booked"></a></p>
+         <p>Seat Picked: <a id="seat-booked"></a></p>
+         <p>Cost: <a id="cost-total"></a></p>
+         <button id="seat-btn" ><a href="#personal-header"> To personal details</a></button>
+        </div>
+    
+     </section>
+
+     <!-- Person details  -->     
+     <div class="text-center-info" id="flight-container">
+       <h1 id = "personal-header">Personal Details</h1>
+       <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:     </label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="number">Phone number:</label>
+  <input type="text" id="number" name="number"><br><br>
+  <label for="address">Address:</label>
+  <input type="text" id="address" name="address"><br><br>
+
+  <button id="seats-btn" ><a href="#payment-header"> To payment</a></button>
+
+     </div>
+
+     <!-- payment details  -->     
+     <div class="text-center-info" id="flight-container">
+       <h1 id = "payment-header">Payment Details</h1>
+       <br>
+  <label for="card-num">Card Number:</label>
+  <input type="text" id="card-num" name="card-num"><br><br>
+  <label for="date">Expiry date:     </label>
+  <input type="text" id="date" name="date"><br><br>
+  <label for="cvv">CVV Code:</label>
+  <input type="text" id="cvv" name="cvv"><br><br>
+  
+
+  <button id="seats-btn" ><a href="#booked-id"> Pay</a></button>
+
+     </div>
+
+
+     <div class="text-center-booked" id="flight-container">
+       <h1 id="booked-header">Booked!!!</h1>
+       <h1 id="booked-id">Booking ID is: AG157654</h1>
+     </div>
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
